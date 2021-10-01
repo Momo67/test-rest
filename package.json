@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "server-pm": "pm2 start server.js --watch",
+    "monitoring": "pm2 monit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
